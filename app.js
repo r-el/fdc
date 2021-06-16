@@ -1,3 +1,4 @@
+var Food = require('./models/food') // יבא את מודל המאכל
 const fetch = require('node-fetch')
 
 // פרמטרים
