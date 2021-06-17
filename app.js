@@ -1,5 +1,8 @@
 var Food = require('./models/food') // יבא את מודל המאכל
 const fetch = require('node-fetch')
+var MongoClient = require('mongodb').MongoClient; // להתחבר למונגו
+var url = "";
+
 
 // פרמטרים
 const params = {
