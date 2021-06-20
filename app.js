@@ -32,7 +32,7 @@ var api_url = `https://api.nal.usda.gov/fdc/v1/foods/search?api_key=${encodeURIC
         if (err) { reject(err);}        // אם יש שגיאה תדפיס אותה
          else {
           let json = JSON.parse(body);  // JSON-אחרת קח את התוצאה ותמיר אותה ל
-          // console.log(json.foods[0]);
+        // console.log(json.foods[0]);
           resolve(json.foods[0]);       // תחזיר את המערך של המאכלים
         }
       })
